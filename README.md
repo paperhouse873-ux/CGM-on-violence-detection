@@ -32,8 +32,6 @@ phase13_case_studies.py      # qualitative examples (rescued / preserved / miss)
 phase14_cgm_arch_ablation.py # width / depth / linear / no-gate ablation
 phase15_latency.py           # CPU timing for the gate and the context front-end
 phase0_step3_statistics.py   # dataset statistics
-draw_pipeline.py             # the architecture diagram
-draw_cgm_detail.py           # the gate close-up figure
 split.py                     # stratified 70/15/15 split helper
 cache/                       # pre-computed p_base and context features
 checkpoints/                 # trained CGM weights (cgm_e4.pth) + scaler

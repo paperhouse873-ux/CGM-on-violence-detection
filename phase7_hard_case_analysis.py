@@ -1,12 +1,12 @@
 """
-Phase 7 (Direction 1) — "hard case" analysis: where does CGM help on RWF?
+Phase 7 — "hard case" analysis: where does CGM help on RWF?
 ================================================================
 Claim: X3D-S is already very good on EASY cases. The real contribution of CGM
 is on the HARD group — where the detector is unsure (p_base near 0.5) — by
 injecting context signal (crowd/light/motion) that a pure visual detector
 doesn't see.
 
-STRICT protocol (survive review):
+STRICT protocol (no leakage):
   * Use the ORIGINAL split (cache/splits.npy): train CGM on train, select by val
     AUC, evaluate on TEST -> test p_base does NOT leak (X3D-S never saw test).
   * Scaler fit on train ONLY.

@@ -31,7 +31,7 @@ class RWF2000Dataset(Dataset):
 
     Args:
         root:       path to RWF-2000 root dir
-        split_file: path to split.json (from phase0_step4)
+        split_file: path to split.json (from split.py)
         split:      "train", "val", or "test"
         n_frames:   number of frames to sample (default 16 — X3D-S standard)
         img_size:   resize size (default 224)
@@ -261,7 +261,7 @@ if __name__ == "__main__":
                         help="path to RWF-2000 root dir")
     parser.add_argument("--split", type=str,
                         default="./split.json",
-                        help="path to split.json from phase0_step4")
+                        help="path to split.json from split.py")
     args = parser.parse_args()
 
     test_dataloader(args.root, args.split)

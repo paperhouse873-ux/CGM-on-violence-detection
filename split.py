@@ -1,17 +1,10 @@
 """
-Phase 0 — Step 4: make train/val/test split 70/15/15
-=====================================================
-Run: python phase0_step4_split.py --root /path/to/RWF-2000 --seed 42
+Make the train/val/test split (70/15/15, stratified) for RWF-2000.
+Run: python split.py --root /path/to/RWF-2000 --seed 42
 
-RWF-2000 only ships train (1600) and val (400).
-This script:
-  - merges all 2000 clips
-  - stratified 70/15/15 split (1400/300/300)
-  - dumps to split.json so every experiment shares it
-
-Why split.json?
-  makes sure every model (M1, M2, M3, M4) trains and tests on
-  the exact same data. without it the comparison isn't fair.
+RWF-2000 only ships train (1600) and val (400); we merge all 2000 clips and
+re-split into 1400/300/300, then dump split.json so every experiment uses the
+exact same data (otherwise the comparison isn't fair).
 """
 
 import json

@@ -1,5 +1,5 @@
 """
-Phase 13 — Qualitative case studies (Task 4)
+Phase 13 — Qualitative case studies
 ============================================
 Show what the CGM "looks at" via 3 concrete cases from the HARD group of the test set:
   (A) False alarm RESCUED by CGM : nonFight, p_base>=0.5 -> p_cgm<0.5

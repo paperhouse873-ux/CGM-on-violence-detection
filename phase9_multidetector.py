@@ -1,5 +1,5 @@
 """
-Phase 9 (Stage C) — Evaluate CGM across MANY detectors + headroom curve
+Phase 9 — Evaluate CGM across many detectors + headroom curve
 =========================================================================
 Attach CGM (962 params, runs on CPU) to each detector's p_base, measure with the
 STRICT protocol used in Phase 7:

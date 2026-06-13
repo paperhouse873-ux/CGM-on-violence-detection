@@ -1,8 +1,9 @@
 """
 Phase 14 — CGM architecture ablation
 ====================================
-Answers the rebuttal "there's only 1 variant FC(13->32), how do you know it's best?".
-Compares several CGM architecture variants, KEEPING the phase7/phase12 protocol
+Checks whether FC(13->32) is really the best CGM variant, not just an
+arbitrary choice. Compares several CGM architecture variants, keeping the same
+protocol as phase7
 (original split, scaler fit on train, select by val-AUC, eval on test, many seeds).
 All train in a few seconds on CPU.
 

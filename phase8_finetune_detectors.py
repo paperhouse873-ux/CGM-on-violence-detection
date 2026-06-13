@@ -1,5 +1,5 @@
 """
-Phase 8 (Direction 2) — Fine-tune a 2nd/3rd detector to prove model-agnostic
+Phase 8 — Fine-tune a 2nd/3rd detector to test the model-agnostic claim
 ===========================================================================
 Goal: attach CGM to architecture FAMILIES other than X3D-S so the "model-agnostic"
 claim is real (not just "scale-agnostic"):
@@ -10,7 +10,7 @@ Reuse the exact "winning recipe" from X3D-S:
     proj head -> Linear(.,1) ; drop the final activation ; BCEWithLogitsLoss ;
     NO sigmoid before the loss.
 
-IMPORTANT — run the SMOKE TEST LOCALLY (CPU) BEFORE renting a GPU:
+Run the smoke test locally (CPU) before launching a GPU run:
     python phase8_finetune_detectors.py --model slowfast_r50 --smoke_test
     python phase8_finetune_detectors.py --model mvit_base_16x4 --smoke_test
 
