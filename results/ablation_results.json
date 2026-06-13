@@ -1,0 +1,141 @@
+[
+  {
+    "experiment": "E0",
+    "streams": [],
+    "test_metrics": {
+      "accuracy": 0.8595,
+      "f1": 0.8609,
+      "auc_roc": 0.9435,
+      "fpr": 0.1533,
+      "fnr": 0.1275,
+      "tp": 130,
+      "tn": 127,
+      "fp": 23,
+      "fn": 19
+    }
+  },
+  {
+    "experiment": "E1",
+    "streams": [
+      "crowd"
+    ],
+    "pos_weight": 1.0,
+    "input_dim": 5,
+    "cgm_params": 450,
+    "test_metrics": {
+      "accuracy": 0.8696,
+      "f1": 0.873,
+      "auc_roc": 0.9399,
+      "fpr": 0.16,
+      "fnr": 0.1007,
+      "tp": 134,
+      "tn": 126,
+      "fp": 24,
+      "fn": 15,
+      "alpha_mean": 0.5021,
+      "alpha_std": 0.0287,
+      "alpha_violent": 0.5186,
+      "alpha_normal": 0.4857
+    }
+  },
+  {
+    "experiment": "E2",
+    "streams": [
+      "light"
+    ],
+    "pos_weight": 1.0,
+    "input_dim": 5,
+    "cgm_params": 450,
+    "test_metrics": {
+      "accuracy": 0.8662,
+      "f1": 0.8649,
+      "auc_roc": 0.949,
+      "fpr": 0.1267,
+      "fnr": 0.1409,
+      "tp": 128,
+      "tn": 131,
+      "fp": 19,
+      "fn": 21,
+      "alpha_mean": 0.4491,
+      "alpha_std": 0.0677,
+      "alpha_violent": 0.4346,
+      "alpha_normal": 0.4635
+    }
+  },
+  {
+    "experiment": "E3",
+    "streams": [
+      "motion"
+    ],
+    "pos_weight": 1.0,
+    "input_dim": 5,
+    "cgm_params": 450,
+    "test_metrics": {
+      "accuracy": 0.8696,
+      "f1": 0.8721,
+      "auc_roc": 0.9437,
+      "fpr": 0.1533,
+      "fnr": 0.1074,
+      "tp": 133,
+      "tn": 127,
+      "fp": 23,
+      "fn": 16,
+      "alpha_mean": 0.4954,
+      "alpha_std": 0.0508,
+      "alpha_violent": 0.5334,
+      "alpha_normal": 0.4577
+    }
+  },
+  {
+    "experiment": "E4",
+    "streams": [
+      "crowd",
+      "light",
+      "motion"
+    ],
+    "pos_weight": 1.0,
+    "input_dim": 13,
+    "cgm_params": 962,
+    "test_metrics": {
+      "accuracy": 0.8763,
+      "f1": 0.8746,
+      "auc_roc": 0.9438,
+      "fpr": 0.1133,
+      "fnr": 0.1342,
+      "tp": 129,
+      "tn": 133,
+      "fp": 17,
+      "fn": 20,
+      "alpha_mean": 0.5076,
+      "alpha_std": 0.031,
+      "alpha_violent": 0.52,
+      "alpha_normal": 0.4953
+    }
+  },
+  {
+    "experiment": "E5",
+    "streams": [
+      "crowd",
+      "light",
+      "motion"
+    ],
+    "pos_weight": 3.0,
+    "input_dim": 13,
+    "cgm_params": 962,
+    "test_metrics": {
+      "accuracy": 0.8696,
+      "f1": 0.8704,
+      "auc_roc": 0.94,
+      "fpr": 0.14,
+      "fnr": 0.1208,
+      "tp": 131,
+      "tn": 129,
+      "fp": 21,
+      "fn": 18,
+      "alpha_mean": 0.6113,
+      "alpha_std": 0.0608,
+      "alpha_violent": 0.6124,
+      "alpha_normal": 0.6102
+    }
+  }
+]

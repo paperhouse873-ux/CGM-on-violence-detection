@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "A: Rescued false alarm",
+    "idx": 1900,
+    "path": "val\\nonFight\\NW4ndzCa_0.avi",
+    "label": 0,
+    "p_base": 0.5390388369560242,
+    "p_cgm": 0.4697723984718323,
+    "alpha": 0.5190291404724121,
+    "desc": "Non-violent clip; CGM pulls p below 0.5"
+  },
+  {
+    "tag": "B: Preserved true positive",
+    "idx": 1835,
+    "path": "train\\fight\\_q5Nwh4Z6ao_13.avi",
+    "label": 1,
+    "p_base": 0.6855482459068298,
+    "p_cgm": 0.5649187564849854,
+    "alpha": 0.5696917772293091,
+    "desc": "Violent clip; CGM keeps p above 0.5"
+  },
+  {
+    "tag": "C: Failure case",
+    "idx": 1942,
+    "path": "train\\fight\\24E0xYYUz44_7.avi",
+    "label": 1,
+    "p_base": 0.5726345181465149,
+    "p_cgm": 0.4867555499076843,
+    "alpha": 0.6002262234687805,
+    "desc": "CGM lowered a correct violent prediction below 0.5"
+  }
+]

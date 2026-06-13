@@ -1,0 +1,29 @@
+# ============================================================
+# violence-detection — Python dependencies
+# ============================================================
+# QUAN TRỌNG (máy GPU / A100):
+#   torch + torchvision KHÔNG được liệt kê ở đây vì image GPU đã có sẵn
+#   bản CUDA. TUYỆT ĐỐI không cài đè torch (sẽ hỏng CUDA).
+#   Nếu máy chưa có torch, cài bản CUDA TRƯỚC theo https://pytorch.org
+#   rồi mới chạy: pip install -r requirements.txt --root-user-action=ignore
+# ------------------------------------------------------------
+
+# Video models (X3D-S, SlowFast, MViT) — chỉ dùng pytorchvideo.models.hub
+pytorchvideo==0.1.5
+
+# Xử lý video/ảnh — bản headless cho server (tránh lỗi libGL trên Linux)
+opencv-python-headless
+
+# Huấn luyện CGM, metrics, tiền xử lý
+scikit-learn
+numpy<2.3
+tqdm
+
+# Vẽ hình (phase7/phase9) — chủ yếu chạy ở local
+matplotlib
+
+# ------------------------------------------------------------
+# TÙY CHỌN — chỉ cần khi trích context stream từ VIDEO THÔ (YOLO crowd).
+# KHÔNG cần cho fine-tune trên GPU (phase8/8b tái dùng cache context).
+# Bỏ comment nếu bạn cần chạy lại phase3 trích context:
+# ultralytics

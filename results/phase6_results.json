@@ -1,0 +1,35 @@
+[
+  {
+    "model": "X3D-S",
+    "dataset": "RLVS",
+    "n_clips": 2000,
+    "baseline": {
+      "accuracy": 0.7695,
+      "f1": 0.8041,
+      "auc_roc": 0.9156,
+      "fpr": 0.407,
+      "fnr": 0.054,
+      "tp": 946,
+      "tn": 593,
+      "fp": 407,
+      "fn": 54
+    },
+    "with_cgm": {
+      "accuracy": 0.7935,
+      "f1": 0.8199,
+      "auc_roc": 0.8961,
+      "fpr": 0.353,
+      "fnr": 0.06,
+      "tp": 940,
+      "tn": 647,
+      "fp": 353,
+      "fn": 60,
+      "alpha_mean": 0.548,
+      "alpha_violent": 0.5476,
+      "alpha_normal": 0.5483
+    },
+    "fpr_delta": 0.054,
+    "fpr_rel_pct": 13.3,
+    "transfer": "zero-shot (CGM trained on RWF-2000)"
+  }
+]

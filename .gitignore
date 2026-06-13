@@ -1,0 +1,20 @@
+# datasets (not redistributed)
+RWF-2000/
+RLVS/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# large backbone checkpoints (reproduce with phase2 / phase8)
+checkpoints/x3ds_best.pth
+checkpoints/slowfast_r50_best.pth
+checkpoints/mvit_base_16x4_best.pth
+*.pt
+yolov8n.pt
+
+# misc
+wandb/
+.DS_Store
+*.log
