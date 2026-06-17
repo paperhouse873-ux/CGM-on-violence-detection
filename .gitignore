@@ -1,6 +1,6 @@
-# datasets (not redistributed)
-RWF-2000/
-RLVS/
+# raw datasets at repo root (not redistributed; cache/ is kept)
+/RWF-2000/
+/RLVS/
 
 # python
 __pycache__/

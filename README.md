@@ -26,7 +26,7 @@ phase6b_train_rlvs.py        # cross-dataset: zero-shot vs in-domain on RLVS
 phase7_hard_case_analysis.py # easy vs hard split, matched-recall FPR, AUC
 phase8_finetune_detectors.py # SlowFast-R50 and MViT-B baselines
 phase8b_extract_pbase.py     # cache p_base for the extra detectors
-phase9_multidetector.py      # the headroom relationship across detectors
+phase9_multidetector.py      # the headroom trend across detectors
 phase10_paper_figures.py     # regenerate the figures used in the paper
 phase13_case_studies.py      # qualitative examples (rescued / preserved / miss)
 phase14_cgm_arch_ablation.py # width / depth / linear / no-gate ablation
