@@ -89,6 +89,3 @@ and point the scripts at the folders.
 - `cache/rlvs/` holds the RLVS features used by `phase6b`.
 
 ## Citation
-
-If you use this code, please cite the paper (details to be added once the
-proceedings are out).
